@@ -7,24 +7,209 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
-          # extended: true
+          hugo-version: '0.79.1'
+          extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+xchanging-online.github.io/.github/workflows/
+in
+master
+1
+
+name: github pages
+
+2
+
+​
+
+3
+
+on:
+
+4
+
+  push:
+
+5
+
+    branches:
+
+6
+
+      - main  # Set a branch to deploy
+
+7
+
+​
+
+8
+
+jobs:
+
+9
+
+  deploy:
+
+10
+
+    runs-on: ubuntu-18.04
+
+11
+
+    steps:
+
+12
+
+      - uses: actions/checkout@v2
+
+13
+
+        with:
+
+14
+
+          submodules: recursive  # Fetch the Docsy theme
+
+15
+
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+16
+
+​
+
+17
+
+      - name: Setup Hugo
+
+18
+
+        uses: peaceiris/actions-hugo@v2
+
+19
+
+        with:
+
+20
+
+          hugo-version: '0.79.1'
+
+21
+
+          extended: true
+
+22
+
+​
+
+23
+
+      - name: Setup Node
+
+24
+
+        uses: actions/setup-node@v1
+
+25
+
+        with:
+
+26
+
+          node-version: '12.x'
+
+27
+
+​
+
+28
+
+      - name: Cache dependencies
+
+29
+
+        uses: actions/cache@v1
+
+30
+
+        with:
+
+31
+
+          path: ~/.npm
+
+32
+
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+33
+
+          restore-keys: |
+
+34
+
+            ${{ runner.os }}-node-
+
+35
+
+​
+
+36
+
+      - run: npm ci
+
+37
+
+      - run: hugo --minify
+
+38
+
+​
+
+39
+
+      - name: Deploy
+
+40
+
+        uses: peaceiris/actions-gh-pages@v3
+
+41
+
+        with:
+
+42
+
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+Use Control + Space to trigger autocomplete in most situations.
+
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
