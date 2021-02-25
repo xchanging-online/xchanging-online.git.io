@@ -1,37 +1,35 @@
-# Docsy Example
+# ডক্সি উদাহরণ 
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
+[Dডকসি](https://github.com/google/docsy) প্রযুক্তিগত ডকুমেন্টেশন সাইটগুলির জন্য হুগো থিম, সহজ সাইট নেভিগেশন, কাঠামো এবং আরও অনেক কিছু সরবরাহ করে। এই **ডকসি উদাহরণ প্রকল্প** ডকসি থিম ব্যবহার করে, পাশাপাশি আপনার ব্যবহারের জন্য একটি কঙ্কাল ডকুমেন্টেশন কাঠামো সরবরাহ করে। আপনি হয় এই প্রকল্পটি অনুলিপি করতে পারেন এবং এটি আপনার নিজস্ব সামগ্রীতে সম্পাদনা করতে পারেন বা অন্য প্রকল্পের মতো আপনার প্রকল্পগুলিতে থিমটি ব্যবহার করতে পারেন [হুগো থিম](https://gohugo.io/themes/installing-and-using-themes/).
 
-The theme is included in this project as a Git submodule:
-
+এই প্রকল্পটিতে থিমটি গিট সাবমডিউল হিসাবে অন্তর্ভুক্ত করা হয়েছে: 
 ```bash
 ▶ git submodule
  a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
 ```
 
-This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
+এই ডক্সি উদাহরণ প্রকল্পটি হোস্ট করা হয়েছে  [https://example.docsy.dev/](https://example.docsy.dev/).
 
-You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
+আপনি ডক্সি ব্যবহারকারী গাইডে থিমের বিস্তারিত নির্দেশাবলী সন্ধান করতে পারেন : https://docsy.dev/docs/
 
-This is not an officially supported Google product. This project is currently maintained.
+এটি কোনও সরকারীভাবে সমর্থিত গুগল পণ্য নয়। এই প্রকল্পটি বর্তমানে রক্ষণাবেক্ষণ করা হচ্ছে। 
 
-## Using the Docsy Example Project as a template
+## টেম্পলেট হিসাবে ডক্সি উদাহরণ প্রকল্পটি ব্যবহার করা 
 
-A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
+শুরু করার একটি সহজ উপায় হ'ল এই প্রকল্পটিকে একটি টেম্পলেট হিসাবে ব্যবহার করা যা আপনাকে এমন একটি সাইট প্রকল্প দেয় যা সেট আপ এবং ব্যবহারের জন্য প্রস্তুত। এটা করতে: 
 
-1. Click **Use this template**.
+1. ** এই টেম্পলেটটি ব্যবহার করুন ** ক্লিক করুন।
 
-2. Select a name for your new project and click **Create repository from template**.
+২. আপনার নতুন প্রকল্পের জন্য একটি নাম নির্বাচন করুন এবং টেমপ্লেট থেকে ** সংগ্রহস্থল তৈরি করুন ** ক্লিক করুন।
 
-3. Make your own local working copy of your new repo using git clone, replacing https://github.com/my/example.git with your repo’s web URL:
-
+৩. গিট ক্লোন ব্যবহার করে আপনার নতুন রেপোর নিজস্ব স্থানীয় কাজের অনুলিপি তৈরি করুন, https://github.com/my/example.git প্রতিস্থাপন করে আপনার রেপোর ওয়েব ইউআরএল: 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/my/example.git
 ```
 
 You can now edit your own versions of the site’s source files.
 
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
+আপনি যদি এসসিএসএস সম্পাদনা করতে চান এবং এগুলি প্রকাশ করতে চান তবে আপনার ইনস্টল করা দরকার  `PostCSS`
 
 ```bash
 npm install
@@ -39,62 +37,63 @@ npm install
 
 ## Running the website locally
 
-Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
-You can find out more about how to install Hugo for your environment in our
-[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
+## স্থানীয়ভাবে ওয়েবসাইট চালানো
 
-Once you've made your working copy of the site repo, from the repo root folder, run:
+স্থানীয়ভাবে সাইটটি তৈরি এবং পরিচালনা করার জন্য [হুগো](https://gohugo.io).
+আমাদের মধ্যে আপনার পরিবেশের জন্য কীভাবে হুগো ইনস্টল করবেন সে সম্পর্কে আপনি আরও জানতে পারেন 
+[শুরু করা যাক](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) গাইড
+
+একবার আপনি রেপো রুট ফোল্ডার থেকে সাইট রেপোর আপনার কাজের অনুলিপি তৈরির পরে চালান: 
 
 ```
 hugo server
 ```
 
-## Running a container locally
+## স্থানীয়ভাবে একটি ধারক চালানো 
 
-You can run docsy-example inside a [Docker](https://docs.docker.com/)
-container, the container runs with a volume bound to the `docsy-example`
-folder. This approach doesn't require you to install any dependencies other
-than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
-Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
-on Linux.
+আপনি [ডকার] এর ভিতরে ডকসি উদাহরণ চালাতে পারেন(https://docs.docker.com/)
+ধারক, ধারক একটি ভলিউম আবদ্ধ সঙ্গে চলমান `docsy-example`
+ফোল্ডার এই পদ্ধতির জন্য আপনাকে অন্য কোনও নির্ভরতা ইনস্টল করতে হবে না
+চেয়ে  [Docker Desktop](https://www.docker.com/products/docker-desktop)চালু
+উইন্ডোজ এবং ম্যাক এবং [ডকার রচনা] (https://docs.docker.com/compose/install/)
+লিনাক্সে
 
-1. Build the docker image 
+1. ডকার ইমেজ তৈরি করুন 
 
    ```bash
    docker-compose build
    ```
 
-1. Run the built image
+1. নির্মিত ছবিটি চালান 
 
    ```bash
    docker-compose up
    ```
 
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
+   > দ্রষ্টব্য: আপনি একই সাথে উভয় কমান্ড চালাতে পারেন `docker-compose up --build`.
 
-1. Verify that the service is working. 
+1. পরিষেবাটি কাজ করছে কিনা তা যাচাই করুন।
 
-   Open your web browser and type `http://localhost:1313` in your navigation bar,
-   This opens a local instance of the docsy-example homepage. You can now make
-   changes to the docsy example and those changes will immediately show up in your
-   browser after you save.
+    আপনার ওয়েব ব্রাউজারটি খুলুন এবং আপনার নেভিগেশন বারে `http: // লোকালহোস্ট: 1313` টাইপ করুন,
+    এটি ডক্সি-উদাহরণ হোমপেজের স্থানীয় উদাহরণ খুলবে। আপনি এখন করতে পারেন
+    ডক্সি উদাহরণে পরিবর্তনগুলি এবং সেই পরিবর্তনগুলি আপনার সাথে সাথে প্রদর্শিত হবে
+    আপনি সংরক্ষণ করার পরে ব্রাউজার।
 
-### Cleanup
+### পরিষ্কার কর
 
-To stop Docker Compose, on your terminal window, press **Ctrl + C**. 
+আপনার টার্মিনাল উইন্ডোতে ডকার রচনাটি থামাতে, ** Ctrl + C ** টিপুন।
 
-To remove the produced images run:
+চালিত উত্পাদিত চিত্রগুলি সরাতে: 
 
 ```console
 docker-compose rm
 ```
-For more information see the [Docker Compose
-documentation](https://docs.docker.com/compose/gettingstarted/).
+আরও তথ্যের জন্য [ডকার রচনা লিখুন
+ডকুমেন্টেশন] (https://docs.docker.com/compose/gettingstarted/).
 
-## Troubleshooting
+## সমস্যা সমাধান
 
-As you run the website locally, you may run into the following error:
-
+আপনি স্থানীয়ভাবে ওয়েবসাইটটি চালানোর সাথে সাথে আপনি নিম্নলিখিত ত্রুটিতে চলে যেতে পারেন: 
 ```
 ➜ hugo server
 
@@ -103,7 +102,6 @@ Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
 Built in 288 ms
 Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
 ```
-
-This error occurs if you have not installed the extended version of Hugo.
-See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
+যদি আপনি হুগোয়ের বর্ধিত সংস্করণ ইনস্টল না করেন তবে তার ত্রুটি ঘটে occurs
+আমাদের [ব্যবহারকারীর গাইড) দেখুন[user guide(https://www.docsy.dev/docs/getting-started/) কীভাবে হুগো ইনস্টল করবেন সে সম্পর্কে নির্দেশাবলীর জন্য। 
 
