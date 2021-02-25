@@ -1,5 +1,5 @@
-baseURL = "/"
-title = "Goldydocs"
+baseURL = "https://xchanging-online.github.io/"
+title = "xChanging Online"
 
 enableRobotsTXT = true
 
@@ -53,11 +53,19 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
+title = "xChanging Online"
+description = "Creating Simplified xChaning Online"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[language.bn]
+title = "ক্সচেন্জিং অনলাইন"
+description = "সহজ ক্সচেন্জিং অনলাইন মনের মতো  মানুষদের সাথে"
+languageName = "Bangla"
+contentDir = "contant/bn"
+time_format_default = "০২.০১.২০০৬"
+time_format_blog = "০২.০১.২০০৬"
+
 [languages.no]
 title = "Goldydocs"
 description = "Docsy er operativsystem for skyen"
@@ -91,7 +99,7 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print"]
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "Abu Zafar"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -116,9 +124,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/xchanging-online/xchanging-online.git"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/xchaning-online.github.io"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -159,8 +167,8 @@ footer_about_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/xchaning-online/xchaning-online/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/xchanging-online/xchaning-online/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -172,12 +180,12 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
-	url = "https://example.org/mail"
+	url = "https://xchanging-online.github.io"
 	icon = "fa fa-envelope"
         desc = "Discussion and help from your fellow users"
 [[params.links.user]]
 	name ="Twitter"
-	url = "https://example.org/twitter"
+	url = "https://twitter.com/mediajockey"
 	icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
@@ -188,7 +196,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/google/docsy"
+	url = "https://github.com/mjabuz/"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
@@ -198,7 +206,7 @@ enable = false
         desc = "Chat with other project developers"
 [[params.links.developer]]
 	name = "Developer mailing list"
-	url = "https://example.org/mail"
+	url = "https://xchanging-online.github.io"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
